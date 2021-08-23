@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
+    outline: 0;
     box-sizing: border-box;
   }
   html{
@@ -18,10 +19,14 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    -webkit-font-smoothing: antialiased !important;
 
     background-color: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.black};
-    
+
     transition: all 0.4s ease-in-out;
+  }
+  ul {
+    list-style: none;
   }
 `

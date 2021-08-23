@@ -1,5 +1,9 @@
-import { Container } from './styled'
+import { ContainerHeader } from './styled'
 
 export const Header = () => {
-  return <Container>Header</Container>
+  return (
+    <ContainerHeader>
+      <h1>Kanban do projeto</h1>
+    </ContainerHeader>
+  )
 }

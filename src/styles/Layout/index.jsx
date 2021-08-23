@@ -1,13 +1,12 @@
-import { Container } from './styled'
-import { Header } from '../../components/Header'
+import { ContainerLayout } from './styled'
 
 export const Layout = ({ children }) => {
   return (
-    <Container>
-      <div>
-        <Header />
+    <ContainerLayout>
+      {children}
+      <div className='background-img'>
+        <img src='/BackgroundScene.svg' alt='background' />
       </div>
-      <div>{children}</div>
-    </Container>
+    </ContainerLayout>
   )
 }
